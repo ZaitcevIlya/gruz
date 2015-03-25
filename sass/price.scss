@@ -1,0 +1,34 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@font-face {
+    font-family: 'CenturyGothic';
+    src: url(../fonts/CenturyGothic.ttf), url(../fonts/CenturyGothic.woff);
+}
+body {
+    .price-page {
+        font-family: 'CenturyGothic', Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif ;
+    }
+    .title {
+        font-size: 21px;
+    }
+    .price-block-title {
+        color: #1d5376;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    .table {
+        .car-value {
+            width: 221px;
+        }
+        .cost-per-hour {
+            width: 172px;
+        }
+        .additional-info {
+            width: 212px;
+        }
+    }
+}
