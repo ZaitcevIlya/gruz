@@ -11,24 +11,112 @@
 body {
     .price-page {
         font-family: 'CenturyGothic', Verdana, "Helvetica Neue", Helvetica, Arial, sans-serif ;
-    }
-    .title {
-        font-size: 21px;
-    }
-    .price-block-title {
-        color: #1d5376;
-        font-weight: 600;
-        font-size: 22px;
-    }
-    .table {
-        .car-value {
-            width: 221px;
+        .page-title {
+            /*margin-bottom: 40px;*/
         }
-        .cost-per-hour {
-            width: 172px;
+        .price-block-title {
+            color: #1d5376;
+            font-weight: 600;
+            font-size: 22px;
+            margin-top: 30px;
         }
-        .additional-info {
-            width: 212px;
+        .table {
+            .car-value {
+                width: 221px;
+                font-size: 17px;
+                font-weight: 600;
+                vertical-align: middle;
+                padding-left: 20px;
+                box-sizing: border-box;
+            }
+            .cost-per-hour {
+                width: 172px;
+                vertical-align: middle;
+                color: #e4a000;
+                font-size: 18px;
+                font-weight: 600;
+                box-sizing: border-box;
+                padding-left: 30px;
+            }
+            .additional-info {
+                width: 212px;
+                vertical-align: middle;
+                padding-left: 28px;
+                padding-right: 22px;
+                color: #6e6e6e;
+                font-size: 12px;
+                font-family: Arial;
+                box-sizing: border-box;
+            }
+            &.material {
+                .car-value {
+                    width: 391px;
+                }
+                .cost-per-hour {
+                    width: 122px;
+                }
+                .additional-info {
+                    width: 92px;
+                    padding: 0 0 0 14px;
+                }
+            }
         }
+        .btnx {
+            display: inline-block;
+            background-color: #f7b71f;
+            text-decoration: none!important;
+            &:hover {
+                background-color: #e9aa1e;
+            }
+            span {
+                display: block;
+                margin: 2px;
+                padding: 5px 15px;
+                border: 1px solid #555;
+                color: #333;
+                font-size: 0.9em;
+                text-transform: uppercase;
+            }
+        }
+        .image-block {
+            position: relative;
+            width: 267px;
+            height: 180px;
+            &.all-cars {
+                background: url(../image/all_cars.png) 0 0 no-repeat;
+            }
+            &.calculation {
+                background: url(../image/Calc-button-picture.png) 21px 0 no-repeat;
+                height: 132px;
+            }
+            a {
+                position: absolute;
+                bottom: 5px;
+                left: 0;
+            }
+        }
+    }
+
+}
+/*Custom style*/
+.block-offset {
+    margin-left: 33px;
+    margin-top: 71px;
+}
+
+/* Customize container */
+@media (min-width: 960px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (max-width: 992px) {
+    .block-offset {
+        margin-left: 0;
+    }
+}
+@media (max-width: 768px) {
+    .block-offset {
+        margin-top: 0;
     }
 }
